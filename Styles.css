@@ -261,3 +261,23 @@ body {
     margin-top: 27px;
     opacity: 0.9;
 }
+/* === Нова секція після line4 === */
+.after-line4-section {
+    background-color: #fdf8f3;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.after-line4-section h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.after-line4-section p {
+    font-size: 15px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}

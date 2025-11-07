@@ -160,3 +160,48 @@ body {
     transform: scale(1.05);
     opacity: 0.9;
 }
+
+/* === Іконки під кнопкою === */
+.hero-icons {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-icons img {
+    width: 14px;
+    height: 14px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.hero-icons img:hover {
+    opacity: 1;
+}
+
+/* === Іконки перегортки === */
+.scroll-icon {
+    position: absolute;
+    top: 520px;
+    width: 40px;
+    height: 70px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.scroll-icon:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.left-arrow {
+    left: 80px;
+}
+
+.right-arrow {
+    right: 80px;
+}

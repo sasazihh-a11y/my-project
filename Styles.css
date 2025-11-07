@@ -317,3 +317,92 @@ body {
     z-index: 2;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
+/* === Секція з фоном та градієнтом === */
+.bg-gradient-section {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    margin-top: -45px;
+    overflow: hidden;
+}
+
+/* Фонове зображення + градієнт */
+.bg-gradient-section .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(to right, #2c1a0c, #7a4a1d),
+        url('image1/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/* === Кнопка поверх bg === */
+.bg-button-wrapper {
+    position: absolute;
+    top: 50%;
+    right: 325px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.bg-button {
+    width: 170px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.button-text {
+    position: absolute;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+
+.bg-button-wrapper:hover .bg-button {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* === Текст поверх bg === */
+.bg-text {
+    position: absolute;
+    top: 50%;
+    left: 325px; 
+    transform: translateY(-50%);
+    color: #ffffff;
+    z-index: 2;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.bg-text h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.bg-text .highlight {
+    color: #c7a46c; 
+}
+
+.bg-text p {
+    font-size: 13px;
+    color: #727171; 
+    margin: 0;
+    font-weight: 400;
+}
